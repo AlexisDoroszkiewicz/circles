@@ -1,0 +1,38 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+}
+
+.container {
+	grid-area: 1 / 1;
+	aspect-ratio: 1/1;
+	width: 400px;
+	outline: 1px solid black;
+}
+
+.circle {
+	aspect-ratio: 1/1;
+	width: 60px;
+	background-color: rebeccapurple;
+	border-radius: 50%;
+	color: white;
+	display: grid;
+	place-items: center;
+}
+
+@for $i from 1 through 16 {
+	.container:nth-of-type(#{$i}) {
+		transform: rotate(#{22.5 * $i}deg);
+		.circle {
+			transform: rotate(#{-22.5 * $i}deg);
+		}
+	}
+}
