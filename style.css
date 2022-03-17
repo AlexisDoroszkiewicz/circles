@@ -21,7 +21,7 @@ body {
 .circle {
   aspect-ratio: 1/1;
   width: 60px;
-  background-color: rebeccapurple;
+  background-color: #8338ce;
   border-radius: 50%;
   color: white;
   display: grid;
@@ -29,115 +29,156 @@ body {
 }
 
 .container:nth-of-type(1) {
-  transform: rotate(22.5deg);
+  --R: 22.5deg;
+  animation: rotation 120ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(1) .circle {
   transform: rotate(-22.5deg);
 }
 
 .container:nth-of-type(2) {
-  transform: rotate(45deg);
+  --R: 45deg;
+  animation: rotation 240ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(2) .circle {
   transform: rotate(-45deg);
 }
 
 .container:nth-of-type(3) {
-  transform: rotate(67.5deg);
+  --R: 67.5deg;
+  animation: rotation 360ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(3) .circle {
   transform: rotate(-67.5deg);
 }
 
 .container:nth-of-type(4) {
-  transform: rotate(90deg);
+  --R: 90deg;
+  animation: rotation 480ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(4) .circle {
   transform: rotate(-90deg);
 }
 
 .container:nth-of-type(5) {
-  transform: rotate(112.5deg);
+  --R: 112.5deg;
+  animation: rotation 600ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(5) .circle {
   transform: rotate(-112.5deg);
 }
 
 .container:nth-of-type(6) {
-  transform: rotate(135deg);
+  --R: 135deg;
+  animation: rotation 720ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(6) .circle {
   transform: rotate(-135deg);
 }
 
 .container:nth-of-type(7) {
-  transform: rotate(157.5deg);
+  --R: 157.5deg;
+  animation: rotation 840ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(7) .circle {
   transform: rotate(-157.5deg);
 }
 
 .container:nth-of-type(8) {
-  transform: rotate(180deg);
+  --R: 180deg;
+  animation: rotation 960ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(8) .circle {
   transform: rotate(-180deg);
 }
 
 .container:nth-of-type(9) {
-  transform: rotate(202.5deg);
+  --R: 202.5deg;
+  animation: rotation 1080ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(9) .circle {
   transform: rotate(-202.5deg);
 }
 
 .container:nth-of-type(10) {
-  transform: rotate(225deg);
+  --R: 225deg;
+  animation: rotation 1200ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(10) .circle {
   transform: rotate(-225deg);
 }
 
 .container:nth-of-type(11) {
-  transform: rotate(247.5deg);
+  --R: 247.5deg;
+  animation: rotation 1320ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(11) .circle {
   transform: rotate(-247.5deg);
 }
 
 .container:nth-of-type(12) {
-  transform: rotate(270deg);
+  --R: 270deg;
+  animation: rotation 1440ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(12) .circle {
   transform: rotate(-270deg);
 }
 
 .container:nth-of-type(13) {
-  transform: rotate(292.5deg);
+  --R: 292.5deg;
+  animation: rotation 1560ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(13) .circle {
   transform: rotate(-292.5deg);
 }
 
 .container:nth-of-type(14) {
-  transform: rotate(315deg);
+  --R: 315deg;
+  animation: rotation 1680ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(14) .circle {
   transform: rotate(-315deg);
 }
 
 .container:nth-of-type(15) {
-  transform: rotate(337.5deg);
+  --R: 337.5deg;
+  animation: rotation 1800ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(15) .circle {
   transform: rotate(-337.5deg);
 }
 
 .container:nth-of-type(16) {
-  transform: rotate(360deg);
+  --R: 360deg;
+  animation: rotation 1920ms cubic-bezier(0.36, -0.37, 0.79, 1.13) forwards;
+  animation-delay: 2s;
 }
 .container:nth-of-type(16) .circle {
   transform: rotate(-360deg);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(var(--R));
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
